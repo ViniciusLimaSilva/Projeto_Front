@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logofrontal {
+  padding: 14px 40px;
+  box-shadow: 10px 5px 5px rgb(202, 202, 202);
+}
+
+.menubar {
+  padding-left: 1300px;
+}
+
+.foto-principall {
+  padding: 25px;
+  position: absolute;
+  width: 1200px;
+  padding-left: 160px;
+}
+
+.seta-direita {
+  position: relative;
+  left: 1300px;
+  top: 230px;
+}
+
+.seta-esquerda {
+  position: relative;
+  left: 190px;
+  top: 205px;
+}
+
+.fotos-valor {
+  position: relative;
+  padding: 500px;
+  right: 340px;
+}
+
+.preco {
+  margin-top: 50px;
+  padding: 260px;
+}
+
