@@ -108,10 +108,10 @@
         </div>
       </section>
 
-      <section class="contract">
+      <section class="contact">
         <div class="container">
           <h2 class="contato">Contact</h2>
-          <form action="thanks.html">
+          <form action="thanks.html" id="form_contact">
             <input type="text" name="nome" id="input_nome" placeholder="Nome" />
             <input
               type="email"
@@ -119,20 +119,36 @@
               id="input_email"
               placeholder="Email"
             />
+            <input
+              type="text"
+              name="telefone"
+              id="input_telefone"
+              placeholder="Telefone"
+            />
             <textarea
               name="mensagem"
               id="mensagem"
               cols="30"
               rows="10"
             ></textarea>
-            <button type="submit">Enviar</button>
+
+            <button type="submit" id="btn-submit">Enviar</button>
           </form>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
-        <div class="map"></div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.57361412052!2d-46.78016997730711!3d-23.536336067227932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1619466660175!5m2!1spt-BR!2sbr"
+            width="50%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
         <div class="info">
           <p>LOVT - You love, your loft!</p>
 
@@ -155,14 +171,27 @@
     <div class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          Newsletter
           <button class="close" onclick="btnClose()">x</button>
+        </div>
+        <div class="text-modal">
+          <b><u>Newsletter - cadastre-se para receber novidades!!</u></b>
         </div>
         <div class="modal-body">
           <form>
-            <input type="text" name="Nome" />
-            <input type="email" name="email" />
-            <button type="submit">enviar</button>
+            <input
+              type="text"
+              name="Nome"
+              placeholder="Nome"
+              class="nome-newsletter"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="email-newsletter"
+            />
+
+            <button type="submit" class="btn-enviar-modal">enviar</button>
           </form>
         </div>
       </div>
